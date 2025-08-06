@@ -61,7 +61,7 @@ a:hover {
 }
 
 #about {
-    width: 20vw;
+    width: 25vw;
     margin: .5rem;
     padding-left: .5rem;
     position: fixed;
@@ -82,12 +82,13 @@ a:hover {
     height: auto;
     object-fit: fill;
     margin: 0;
+    padding: 0;
 }
 
 #circle {
     height: 3rem;
     width: 3rem;
-    background-color: #f0f189;
+    background-color: #d3f189;
     border-radius: 50%;
     border: 1px dashed #6b1938;
     animation: rotate 25s linear infinite;

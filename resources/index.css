@@ -97,7 +97,7 @@ a:hover {
 #circle {
     height: 3rem;
     width: 3rem;
-    background-color: #f0f189;
+    background-color: #d3f189;
     border-radius: 50%;
     border: 1px dashed #6b1938;
     animation: rotate 25s linear infinite;
@@ -137,7 +137,7 @@ a:hover {
 }
 
 #background {
-    background-color: #f0f189;
+    background-color: #d3f189;
     position: fixed;
     bottom: 0;
     width: 100vw;
