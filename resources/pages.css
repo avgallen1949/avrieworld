@@ -4,6 +4,11 @@
     font-family: "Routed", Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --color1: #f8d4f9;
+  --color2: #b64901;
+}
+
 html {
     background-color: #f4f4f4;
     width: 100vw;
@@ -26,12 +31,12 @@ html {
 }
 
 a {
-    color:#6b1938;
+    color:var(--color2);
     text-decoration: none;
 }
 
 a:hover {
-    background-color: #6b1938;
+    background-color: var(--color2);
     color: #f4f4f4;
 }
 
@@ -45,7 +50,7 @@ a:hover {
     display: grid;
     width: 99vw;
     height: auto;
-    color: #6b1938;
+    color: var(--color2);
     margin: auto;
 }
 
@@ -88,9 +93,9 @@ a:hover {
 #circle {
     height: 3rem;
     width: 3rem;
-    background-color: #d3f189;
+    background-color: var(--color1);
     border-radius: 50%;
-    border: 1px dashed #6b1938;
+    border: 1px dashed var(--color2);
     animation: rotate 25s linear infinite;
 
 }
