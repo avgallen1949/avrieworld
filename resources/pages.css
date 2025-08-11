@@ -73,6 +73,14 @@ a:hover {
     display: block;
 }
 
+#about2 {
+    width: 35vw;
+    margin: .5rem;
+    padding-left: .5rem;
+    position: fixed;
+    display: block;
+}
+
 #images {
     grid-column: 3 / span 3;
     display: flex;
