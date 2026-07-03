@@ -89,7 +89,7 @@ video {
 }
 
 .text {
-    padding-left: 20px;
+    padding-left: 40px;
     padding-right: 40px;
     padding-top: 20px;
 }
@@ -165,7 +165,7 @@ button.active {
     display: none;
 }
 
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1260px) {
     #grid {
         display: none;
     }
@@ -175,7 +175,10 @@ button.active {
     }
     
     #mobile-grid {
-        display: block;    
+        display: block;
+        position: absolute;
+        left: 0;
+
     }
 
     .project-mobile {
@@ -199,6 +202,10 @@ button.active {
         margin: 20px;
     }
 
+    #left {
+        width: 60%;
+    }
+
     #right {
         padding-left: 60px;
     }
@@ -210,7 +217,9 @@ button.active {
 
     .text {
         padding-right: 40px;
+        padding-left: 30px;
         padding-top: 0;
+        width: 60%;
     }
 
     section {
@@ -227,7 +236,7 @@ button.active {
     }
 }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 845px) {
     #mobile-about {
         display: block;
         margin: 20px;
@@ -238,6 +247,10 @@ button.active {
         padding-top: 20px;
     }
 
+    #left {
+        width: 75%;
+    }
+
     #two {
         padding-bottom: 40px;
     }
@@ -246,6 +259,7 @@ button.active {
         padding-left: 20px;
         padding-top: 10px;
         padding-bottom: 40px;
+        width: 75%;
     }
 
     .project-mobile.show {
