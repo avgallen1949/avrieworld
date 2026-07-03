@@ -4,21 +4,29 @@ html {
     margin: 20px;
     padding: 0;
     font-family: "Social Regular", Helvetica, Arial, sans-serif;
+    color: rgb(43, 36, 36);
 }
 
 a {
-    color: gray;
     text-decoration: none;
-    padding-right: 10px;
+    color: inherit;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-#links {
-    color: gray;
+.links {
+    color: rgb(128, 109, 109);
+    text-decoration: none;
+    padding-right: 10px;
 }
+
+.project-link {
+    cursor: pointer;
+    padding-left: 5px;
+}
+
 
 @font-face {
     font-family: "Social Black";
@@ -59,7 +67,11 @@ section {
     padding-right: 40px;
 }
 
-#index, #about{
+.project-descriptions {
+    padding-right: 40px;
+}
+
+#index, #about, .third, .project-descriptions{
     display: block;
     position: sticky;
     top: 20px;
@@ -72,6 +84,7 @@ section {
 
 .project-title {
     font-family: "Social Black", Helvetica, Arial, sans-serif;
+    padding-right: 7px;
 }
 
 img {
@@ -79,6 +92,31 @@ img {
     height: auto;
     object-fit: contain;
     display: block;
+}
+
+.images a {
+    display: block;
+    width: 100%;
+}
+
+.smaller-img {
+    width: 75%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.click-zoom input[type=checkbox] {
+  display: none;
+}
+
+.click-zoom img {  
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+  transform:  scale(2) translate(-50px, 50px);
+  cursor: zoom-out;
 }
 
 video {
@@ -94,17 +132,17 @@ video {
     padding-top: 20px;
 }
 
-
 .entry {
-    border-bottom: .75px solid gray;
+    border-bottom: .75px solid rgb(128, 109, 109);
     padding-top: 5px;
     padding-bottom: 5px;
+    color: rgb(43, 36, 36)
 }
 
 .type {
     padding-bottom: 5px;
     padding-top: 7px;
-    color: gray;
+    color: rgb(128, 109, 109);
 }
 
 .entries {
@@ -139,7 +177,7 @@ button {
     padding: 0;
     padding-right: 8px;
     margin: 0;
-    color: gray;
+    color: rgb(128, 109, 109);
     font: inherit;
 }
 
@@ -149,16 +187,23 @@ button:hover {
 }
 
 button.active {
-    text-decoration: underline;
-    color: black;
+    color: rgb(43, 36, 36);
     mix-blend-mode: difference;
     font-family: "Social Black", Helvetica, Arial, sans-serif;
 }
 
-.note {
-    color: gray;
+.note, .year, .project-link, .captions {
+    color: rgb(128, 109, 109);
     font-size: 10px;
     line-height: 1.1;
+}
+
+.back {
+    color: rgb(128, 109, 109);
+}
+
+.captions {
+    padding-top: 10px;
 }
 
 #mobile-grid {
@@ -178,11 +223,52 @@ button.active {
         display: block;
         position: absolute;
         left: 0;
-
+        width: 100vw;
+        padding-bottom: 0;
     }
 
-    .project-mobile {
+    .mobile-project-descriptions {
+        display: block;
+        margin: 20px;
+        width: 60%;
+    }
+
+    .mobile-project-images {
         width: 100vw;
+    }
+
+    .mobile-third {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .mobile-third div {
+        flex: 1;
+    }
+
+.click-zoom {
+  overflow: visible; 
+}
+
+.click-zoom img {
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.click-zoom input[type=checkbox]:checked ~ img {
+  transform: scale(2);
+  position: relative;
+  z-index: 999;
+  cursor: zoom-out;
+}
+
+    .project-mobile.show {
+        display: grid;
+        grid-template-columns: 2fr 1.25fr;
+        align-items: start;
     }
 
     .mobile {
@@ -192,7 +278,7 @@ button.active {
     }
 
     button {
-        background-color: rgba(255, 255, 255, 0.809);
+        background-color: rgba(255, 255, 255, 0.888);
         padding: 5px;
     }
 
@@ -203,7 +289,7 @@ button.active {
     }
 
     #left {
-        width: 60%;
+        width: 75%;
     }
 
     #right {
@@ -219,7 +305,7 @@ button.active {
         padding-right: 40px;
         padding-left: 30px;
         padding-top: 0;
-        width: 60%;
+        width: 80%;
     }
 
     section {
@@ -236,7 +322,7 @@ button.active {
     }
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: 880px) {
     #mobile-about {
         display: block;
         margin: 20px;
@@ -251,14 +337,10 @@ button.active {
         width: 75%;
     }
 
-    #two {
-        padding-bottom: 40px;
-    }
-
     .text {
         padding-left: 20px;
         padding-top: 10px;
-        padding-bottom: 40px;
+        padding-bottom: 70px;
         width: 75%;
     }
 
