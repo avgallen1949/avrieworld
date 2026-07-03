@@ -322,7 +322,7 @@ button.active {
     }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 750px) {
     #mobile-about {
         display: block;
         margin: 20px;
