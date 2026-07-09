@@ -295,7 +295,7 @@ button.active {
     }
 
     #left {
-        width: 75%;
+        width: 80%;
     }
 
     #right {
@@ -340,7 +340,7 @@ button.active {
     }
 
     #left {
-        width: 75%;
+        width: 80%;
     }
 
     .text {
@@ -352,5 +352,11 @@ button.active {
 
     .project-mobile.show {
         display: block;
+    }
+
+        .mobile-project-descriptions {
+        display: block;
+        margin: 20px;
+        width: 80%;
     }
 }
