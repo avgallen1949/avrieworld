@@ -17,11 +17,11 @@ a {
     color: inherit;
 }
 
-a:hover {
+a:hover, .links a:hover {
     text-decoration: underline;
 }
 
-.links {
+.links a{
     color: rgb(128, 109, 109);
     text-decoration: none;
     padding-right: 10px;
@@ -123,6 +123,21 @@ img {
 .click-zoom input[type=checkbox]:checked~img {
   transform:  scale(2) translate(-50px, 50px);
   cursor: zoom-out;
+}
+
+.resume-title {
+    padding-top: 20px;
+    margin-right: 40px;
+}
+
+.doc-download {
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.doc-download.open {
+    display: block;
 }
 
 video {
