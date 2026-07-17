@@ -24,7 +24,7 @@
 }
 
 html {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.3;
     margin: 20px;
     padding: 0;
@@ -58,7 +58,7 @@ section {
 .project-title {
     font-family: "Social Black", Helvetica, Arial, sans-serif;
     padding-right: 7px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .subhead {
@@ -97,7 +97,11 @@ button, .back {
 .note, .year {
     color: rgb(128, 109, 109);
     font-size: 10px;
-    line-height: 1.1;
+}
+
+#lighter {
+    color: rgb(181, 156, 156);
+    display: none;
 }
 
 #mobile-grid, #mobile-grid-projects {
@@ -260,7 +264,7 @@ button.active {
 
 .project, .project-mobile {
     display: grid;
-    grid-template-columns: 2fr 1.25fr;
+    grid-template-columns: 2fr 1.5fr;
 }
 
 .third, .mobile-section-third {
@@ -321,7 +325,7 @@ button.active {
         top: 0;
         margin: 0;
         padding: 0;
-        grid-template-columns: minmax(0, 2.3fr) minmax(0, 4fr);
+        grid-template-columns: minmax(0, 2fr) minmax(0, 4fr);
     }
 
     #mobile-about {
@@ -471,6 +475,10 @@ button.active {
 
     .project-title {
         font-size: 20px;
+    }
+
+    #lighter {
+        display: contents;
     }
     
     #mobile-grid {
