@@ -508,8 +508,7 @@ button.active {
     #one {
     position: sticky;
     top: 0;
-    margin-top: -20px;
-    height: 70vh;
+    height: auto;
     padding-bottom: 20px;
     background-color: rgba(181, 169, 169, 0.239);
     z-index: 1;
@@ -535,9 +534,11 @@ button.active {
     }
 
     #mobile-bottom-left {
-    position: absolute;
-    top: 50vh;
-    left: 20px;
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    left: 0;
+    bottom: 0;
 
 }
 
