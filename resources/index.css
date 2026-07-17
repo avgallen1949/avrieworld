@@ -517,7 +517,7 @@ button.active {
     position: sticky;
     top: 0;
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     background-color: rgba(181, 169, 169, 0.239);
     z-index: 1;
     overflow: auto;
