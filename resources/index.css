@@ -89,6 +89,7 @@ button, .back {
     border: .5px rgb(128, 109, 109) solid;
     padding: 4px;
     margin: 1px;
+    border-radius: 2px;
     background-color: white;
     color: rgb(128, 109, 109);
     font: inherit;
@@ -136,7 +137,7 @@ button, .back {
 
 /*---------hover----------*/
 
-.text a:hover, .entry a:hover {
+.text a:hover, .entry a:hover, .link:hover {
     cursor: url(./cursor.svg) -5 -5, url(./cursor.png) -5 -5, pointer;
     color: var(--color1);
     font-family: "Social Black";
