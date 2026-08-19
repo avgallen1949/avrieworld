@@ -76,6 +76,10 @@ video {
     display: block; 
 }
 
+.links, .mobile-links {
+    margin: -6px;
+}
+
 .links button, .type{
     transition: .25s ease;
 }
