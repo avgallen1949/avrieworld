@@ -132,6 +132,10 @@ button, .back {
     max-width: 100%;
 }
 
+#image-bank:hover {
+    color: var(--color1);
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -235,6 +239,13 @@ button.active {
     position: fixed;
     bottom: 10px;
     left: 10px;
+}
+
+#image-bank {
+    position: fixed;
+    bottom: 90px;
+    left: 10x;
+    transition: .25 ease;
 }
 
 /*----------projects----------*/
