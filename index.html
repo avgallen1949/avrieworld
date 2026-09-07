@@ -12,35 +12,33 @@
     <div id="grid">
         <section id="one">
             <div id="about">
-            <span id="name">Avrie Allen</span> is an interdisciplinary designer and educator.
-            <br><br>
+            <span id="name">Avrie Allen</span> is an <button class="view-toggle active" data-view="designer" onclick="setView('designer')">interdisciplinary designer</button> <span class="faded">and</span> <button class="view-toggle" data-view="educator" onclick="setView('educator')">educator</button> based in Providence, RI.            <br><br>
+            
             <div class="category">
             <div class="type" onclick="toggleCategory(this)">About <span class="toggle-icon">+</span></div>
             <div class="about"><br>
-            My research-driven practice ranges from concept development and visual direction to production. I work across (and often outside of) graphic design, engaging visual, written, and material language. My practice includes publications; websites, with particular attention to archives; installations and objects; visual and theoretical research; pedagogy; and writing.
+            I work across (and often outside of) graphic design, engaging visual, written, and material language. My practice includes the creation of publications; websites, with particular attention to archives; installations and objects; visual and theoretical research; pedagogy; and writing.
             <br><br>
-            For inquiries into freelance work, collaborations, teaching, or to request my CV or resume you can email me at avrie.world at gmail dot com.
+            For inquiries into freelance work, collaborations, teaching/workshops, or to request my CV or resume you can email me at avrie.world at gmail dot com.
             <br><br>
-            <span id="name">Right now I'm:</span> making a website for philosopher Susan Buck-Morss, designing a publication and website celebrating the history of RISD student publications, designing for ICA Boston, working on my own publication <em>countersense</em>, and teaching graphic design.
+            <span id="name">Right now I'm:</span> working on freelance web and publication projects, designing for ICA Boston, working on my own publication <em>countersense</em>, and teaching graphic design.
             </div>
             </div>
             <br>
             <div id="index">
             <div id="filter">
-            <button class="btn active" onclick="filterSelection('all')"> All</button><button class="btn" onclick="filterSelection('client')">For Others</button><br><button class="btn" onclick="filterSelection('self')">Self-Directed</button>
+            <button class="btn active" onclick="filterSelection('all')"> All</button><button class="btn" onclick="filterSelection('client')">For Others</button><button class="btn" onclick="filterSelection('self')">Self-Directed</button>
             </div>
-            <br>
             </div>
 
             <div id="bottom-left">            
-                <div class="links"><button><a href="https://www.are.na/avrie-allen/channels" target="_blank"> Are.na </a></button><button><a href="https://www.instagram.com/avrie.world/" target="_blank"> Instagram </a></button><button></div>
+                <div class="links"><button><a href="https://www.are.na/avrie-allen/channels" target="_blank"> Are.na </a></button><button><a href="https://www.instagram.com/avrie.world/" target="_blank"> Instagram </a></button></div>
                 <div class="note">Always hand-coded. Last updated August 2026.<br>© 2026 Avrie Allen. All Rights Reserved.</div>
             </div>
         </div>
         </section>
-        <!-- <div id="image-bank"><a href="./misc.html">Image Bank ↗</a></div> -->
         <section id="two">
-            <div class="project filterDiv client">
+            <div class="project filterDiv client" id="girlhood-arrested">
                 <div class="images"><a href="./girlhoodarrested.html"><img src="./resources/index images/girlhoodarrested-index.gif"><div class="overlay"></div></a></div>
                 <div class="text">
                 <div class="project-title"><a href="./girlhoodarrested.html">Girlhood Arrested <div class="text-overlay"></div></a></div><span class="year">2026</span><br><br>
@@ -48,75 +46,63 @@
                 <br><br>
                 <span class="note">with Dr. Kennedi Johnson and the Visiting Room Project</span></div>
             </div>
-            <div class="project filterDiv self">
+            <div class="project filterDiv self" id="countersense">
                 <div class="images"><a href="./countersense.html"><img src="./resources/index images/countersense-book-index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./countersense.html"><span class="project-title">countersense</span></a><span class="year">2026</span><br><br>
                 <em>countersense</em> is a framework embodying my personal practice—between experience and ideology, self and material conditions—always foregrounding what politics are chosen as a result of the personal.
                 <br><br><span class="note">RISD Graphic Design MFA thesis</span>
                 </div>
             </div>
-            <div class="project filterDiv self">
+            <div class="project filterDiv self" id="on-measurement">
                 <div class="images"><a href="./on-measurement.html"><img src="./resources/index images/measure-index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./on-measurement.html"><span class="project-title">On Measurement</span></a><span class="year">2024</span><br><br>
                 <em>On Measurement</em> situates representations of the body from Albrecht Dürer's 1528 book <em>Instructions on Measurement</em> within a lineage of technologies from 1528–today that aim to capture, measure, and analyze the body.
                 </div>
             </div>
-            <div class="project filterDiv self">
+            <div class="project filterDiv self" id="everyday-utopia">
                 <div class="images"><a href="./everyday-utopia.html"><img src="./resources/index images/closeup-index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./everyday-utopia.html"><span class="project-title">everyday utopia</span></a><span class="year">2025</span><br><br>
                 everyday utopia is a jacquard-woven blanket inspired by <em>A Decolonial Feminism</em> by François Vergès. 
                 Yik Heng Lee (RISD Textiles MFA ’26) interpreted the digital design by Jacob Marcus (RISD GD MFA '27) and me, indexing graphic pixels into woven structures and form. 
                 </div>
             </div>
-            <div class="project filterDiv client">
+            <div class="project filterDiv client" id="risd-triennial">
                 <div class="images"><a href="./risd-triennial.html"><video src="./resources/portfolio page images/Triennial homepage.mp4" autoplay muted playsinline loop preload="auto"></video><div class="overlay"></div></a></div>
                 <div class="text"><a href="./risd-triennial.html"><span class="project-title">RISD Graphic Design Triennial</span></a><span class="year">2024</span><br><br>
                     RISD GD Triennial website I hand-coded and designed as lead with support from members of the web team.
                 </div>
             </div>
-            <div class="project filterDiv client">
+            <div class="project filterDiv client" id="tote-bag">
                 <div class="images"><a href="./tote-bag.html"><img src="./resources/index images/grad studies-index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./tote-bag.html"><span class="project-title">RISD Graduate Studies</span></a><span class="year">2025</span><br><br>
                 I designed custom type utilizing forms gathered from RISD graduate studio and common spaces, like Fleet Library. 
                 </div>
             </div>
-            <div class="project filterDiv self">
+            <div class="project filterDiv self" id="end-of-history">
                 <div class="images"><a href="./end-of-history-history-of-the-end.html"><img src="./resources/portfolio page images/end of history 2.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./end-of-history-history-of-the-end.html"><span class="project-title">The End of History–History of the End</span></a><span class="year">2025</span><br><br>
                     A book of two timelines. Section 1 (white pages), <em>The End of History</em>, documents key events contributing to the global dominance of neoliberalism and Fukuyama's declaration of the end of history. Section 2 (black pages), <em>History of the End</em>, documents global acts of resistance to it—demonstrating that future alternatives have never been foreclosed.
                 </div>
             </div>
-            <div class="project filterDiv self">
+            <div class="project filterDiv self" id="houses-air-street">
                 <div class="images"><a href="./houses-air-street.html"><img src="./resources/index images/houses-air-streets-index.png"><div class="overlay"></div><div class="overlay"></div></a></div>
                 <div class="text"><a href="./houses-air-street.html"><span class="project-title">The houses, the air, the streets</span></a><span class="year">2025</span><br><br>
                 Silk organza fabric prints with text from Karen Brodine's poem, <em>June 78</em>.
                 </div>
             </div>
-            <!-- <div class="project filterDiv teaching">
-                <div class="images"><img src="./resources/portfolio page images/Avrie Allen WS course.png"></div>
-                <div class="text"><a><span class="project-title">Activating Networks, Gathering Knowledge <em>(Coming Soon)</em></span></a><span class="year">2026</span><br><br>
-                    This course investigates how web-based archives can be used to gather inspiration and conduct research for creative practices. Taught wintersession 2026 in RISD Graphic Design department.
-                </div>
-            </div> -->
-            <div class="project filterDiv client">
+            <div class="project filterDiv client" id="kinsey">
                 <div class="images"><a href="./kinsey-institute.html"><img src="./resources/index images/kinsey day IG-index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./kinsey-institute.html"><span class="project-title">Kinsey Institute</span></a><span class="year">2022–24</span><br><br>
                 Miscellaneous works from my time as graphic designer at the Kinsey Institute.
                 </div>
             </div>
-            <div class="project filterDiv self">
+            <div class="project filterDiv self" id="fragments-of-a-future">
                 <div class="images"><a href="./fragments-of-a-future.html"><img src="./resources/index images/fragments of the future index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./fragments-of-a-future.html"><span class="project-title">fragments of a future</span></a><span class="year">2025</span><br><br>
                 A poster arranged by hand using <em>June, 78</em> by Karen Brodine as source material. 
                 </div>
             </div>
-            <!-- <div class="project filterDiv teaching">
-                <div class="images"><img src="./resources/index images/girlhood-workshopindex.png"></div>
-                <div class="text"><a><span class="project-title">Girlhood Zine Workshop <em>(Coming Soon)</em></span></a><span class="year">2025</span><br><br>
-                Dr. Kennedi Johnson and I conducted a zine workshop with formerly incarcerated narrators (including women and one trans masculine person) from the Visiting Room Project, a community archive in New Orleans, to reflect on girlhood as a tool for identity-construction outside of their experience with incarceration.
-                </div>
-            </div> -->
-            <div class="project filterDiv client">
+            <div class="project filterDiv client" id="risd-campus-exhibitions">
                 <div class="images"><a href="./risd-campus-exhibitions.html"><img src="./resources/index images/risd-gallery-brochure-indx.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./risd-campus-exhibitions.html"><span class="project-title">RISD Campus Exhibitions</span></a><span class="year">2025–26</span><br><br>
                 Brochure design for all of RISD's on-campus gallery exhibitions.
@@ -129,61 +115,52 @@
                 <br><br><span class="note">Collaboration with Jacob Marcus</span>
                 </div>
             </div> -->
-            <div class="project filterDiv self">
+            <div class="project filterDiv self" id="empty-pedestal">
                 <div class="images"><a href="./empty-pedestal.html"><img src="./resources/index images/emptypedestal-index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./empty-pedestal.html"><span class="project-title">An Empty Pedestal is an Invitation</span></a><span class="year">2025</span><br><br>
                 Following protests and repeated vandalism of a Christopher Columbus statue in 2020, the city of Providence removed the statue from its pedestal in the Elmwood neighborhood and later gifted it to the city of Johnston, RI where it took on a reactionary cultural significance. Zines and small graphics were distributed around Elmwood, providing this history and inviting residents to submit to a digital archive, an anti-monument, imagining what histories to honor in its place.
                 </div>
             </div>
-            <div class="project filterDiv self">
+            <div class="project filterDiv self" id="no-bread-all-roses">
                 <div class="images"><a href="./no-bread-all-roses.html"><img src="./resources/index images/nobreadallroses-index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./no-bread-all-roses.html"><span class="project-title">no bread, all roses</span></a><span class="year">2024</span><br><br>
                 I designed, filmed, and fabricated a satirical, multi-media installation exploring how the beauty industry obscures aesthetic labor through language of self-expression and play.
                 <br><br><span class="note">Installed in Grunwald Gallery at Indiana University</span>
             </div>
             </div>
-            <!-- <div class="project filterDiv self">
-                <div class="images"><a href="./luddite.html"><img src="./resources/index images/luddite-index.png"><div class="overlay"></div></a></div>
-                <div class="text"><a href="./luddite.html"><span class="project-title">luddite.com/munity</span></a><span class="year">2025</span><br><br>
-                <em>luddite.com/munity</em>, a typography-driven installation, speculates on the effects artificial intelligence will have on our lived experience: our interpersonal relationships, language, labor, cognition, and culture. Set in a fictional post-Providence in 2073, it imagines the struggle of a society facing the effects of climate change but stunted by their over-reliance on artificial intelligence.
-                <br><br><span class="note">Collaboration with Jacob Marcus</span>
+            <div class="project filterDiv teaching" id="girlhood-zine-workshop">
+                <div class="images"><img src="./resources/index images/girlhood-workshopindex.png"></div>
+                <div class="text"><span class="project-title">Girlhood Zine Workshop</span><span class="year">2025</span><br><br>
+                Dr. Kennedi Johnson and I conducted a zine workshop with formerly incarcerated narrators (including women and one trans masculine person) from the Visiting Room Project, a community archive in New Orleans, to reflect on girlhood as a tool for identity-construction outside of their experience with incarceration.
                 </div>
-                </div> -->
-            <div class="project filterDiv self">
-                <div class="images"><img src="./resources/index images/girlhood_redefined-index.png"></div>
-                <div class="text"><a><span class="project-title">girlhood redefined <em>(Adding Soon)</em></span></a><span class="year">2024</span><br><br>
-                <em>girlhood redefined</em> not only seeks to showcase the multiplicity of girlhood, but practices creating knowledge and collective subjectivity from a feminist perspective. The project exemplifies the role that artists and designers, as creators and curators of knowledge, can have in this endeavor, and provides an example of how feminist epistemology relates to design practices.           
-                <br><br><span class="note">In partnership with the Kinsey Institute</span>
             </div>
+            <div class="project filterDiv teaching" id="activating-networks">
+                <div class="images"><img src="./resources/portfolio page images/Avrie Allen WS course.png"></div>
+                <div class="text"><span class="project-title">Activating Networks, Gathering Knowledge</span><span class="year">2026</span><br><br>
+                    This course investigates how web-based archives can be used to gather inspiration and conduct research for creative practices. Taught wintersession 2026 in RISD Graphic Design department.
+                </div>
             </div>
-
-            <!-- <div class="project filterDiv self">
-                <div class="images"><img src="./resources/index images/"></div>
-                <div class="text"><a href="./misc.html"><span class="project-title">Misc.<em></em></span></a><span class="year">2023–</span><br><br>
-                A mix of personal, client, and experimental work.</span>
-            </div>
-            </div> -->
 
         </section>
 
     </div>
 
 
-<!--        Mobile        -->
+<!--Mobile-->
         
 <div id="mobile-grid">
         <section id="one">
             <div id="mobile-about">
-            <span id="name">Avrie Allen</span> is an interdisciplinary designer and educator.
+            <span id="name">Avrie Allen</span> is an <button class="view-toggle active" data-view="designer" onclick="setView('designer')">interdisciplinary designer</button> <span class="faded">and</span> <button class="view-toggle" data-view="educator" onclick="setView('educator')">educator</button> based in Providence, RI.
             <br><br>
             <div class="category">
             <div class="type" onclick="toggleCategory(this)">About <span class="toggle-icon">+</span></div>
             <div class="about"><br>
-            My research-driven practice ranges from concept development and visual direction to production. I work across (and often outside of) graphic design, engaging visual, written, and material language. My practice includes publications; websites, with particular attention to archives; installations and objects; visual and theoretical research; pedagogy; and writing.
+            I work across (and often outside of) graphic design, engaging visual, written, and material language. My practice includes the creation of publications; websites, with particular attention to archives; installations and objects; visual and theoretical research; pedagogy; and writing.
             <br><br>
             For inquiries into freelance work, collaborations, teaching, or to request my CV or resume you can email me at avrie.world at gmail dot com.
             <br><br>
-            <span id="name">Right now I'm:</span> making a website for philosopher Susan Buck-Morss, designing a print anthology and website celebrating the history of RISD's student publications, designing for ICA Boston, working on my own publication <em>countersense</em>, and teaching graphic design.
+            <span id="name">Right now I'm:</span> working on freelance web and publication projects, designing for ICA Boston, working on my own publication <em>countersense</em>, and teaching graphic design.
             <br><br>
             <span class="mobile-links">
                 <button><a href="https://www.are.na/avrie-allen/channels" target="_blank"> Are.na </a></button><button><a href="https://www.instagram.com/avrie.world/" target="_blank"> Instagram </a></button>
@@ -212,7 +189,7 @@
             </div>
     <section id="two-mobile">
 
-            <div class="project-mobile filterDiv client">
+            <div class="project-mobile filterDiv client" id="girlhood-arrested">
                 <div class="images"><a href="./girlhoodarrested.html"><img src="./resources/index images/girlhoodarrested-index.gif"><div class="overlay"></div></a></div>
                 <div class="text">
                 <div class="project-title"><a href="./girlhoodarrested.html">Girlhood Arrested <div class="text-overlay"></div></a></div><span class="year">2026</span><br><br>
@@ -220,76 +197,64 @@
                 <br><br>
                 <span class="note">with Dr. Kennedi Johnson and the Visiting Room Project</span></div>
             </div>
-            <div class="project-mobile filterDiv self">
+            <div class="project-mobile filterDiv self" id="countersense">
                 <div class="images"><a href="./countersense.html"><img src="./resources/index images/countersense-book-index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./countersense.html"><span class="project-title">countersense</span></a><span class="year">2026</span><br><br>
                 <em>countersense</em> is a framework embodying my personal practice—between experience and ideology, self and material conditions—always foregrounding what politics are chosen as a result of the personal.
                 <br><br><span class="note">RISD Graphic Design MFA thesis</span>
                 </div>
             </div>
-            <div class="project-mobile filterDiv self">
+            <div class="project-mobile filterDiv self" id="on-measurement">
                 <div class="images"><a href="./on-measurement.html"><img src="./resources/index images/measure-index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./on-measurement.html"><span class="project-title">On Measurement</span></a><span class="year">2024</span><br><br>
                 <em>On Measurement</em> situates representations of the body from Albrecht Dürer's 1528 book <em>Instructions on Measurement</em> within a lineage of technologies from 1528–today that aim to capture, measure, and analyze the body.
                 </div>
             </div>
-            <div class="project-mobile filterDiv self">
+            <div class="project-mobile filterDiv self" id="everyday-utopia">
                 <div class="images"><a href="./everyday-utopia.html"><img src="./resources/index images/closeup-index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./everyday-utopia.html"><span class="project-title">everyday utopia</span></a><span class="year">2025</span><br><br>
                 everyday utopia is a jacquard-woven blanket inspired by <em>A Decolonial Feminism</em> by François Vergès. 
                 Yik Heng Lee (RISD Textiles MFA ’26) interpreted the digital design by Jacob Marcus (RISD GD MFA '27) and me, indexing graphic pixels into woven structures and form. 
                 </div>
             </div>
-            <div class="project-mobile filterDiv client">
+            <div class="project-mobile filterDiv client" id="risd-triennial">
                 <div class="images"><a href="./risd-triennial.html"><video src="./resources/portfolio page images/Triennial homepage.mp4" autoplay muted playsinline loop preload="auto"></video><div class="overlay"></div></a></div>
                 <div class="text"><a href="./risd-triennial.html"><span class="project-title">RISD Graphic Design Triennial</span></a><span class="year">2024</span><br><br>
                     RISD GD Triennial website I hand-coded and designed as lead with support from members of the web team.
                 </div>
             </div>
-            <div class="project-mobile filterDiv client">
+            <div class="project-mobile filterDiv client" id="tote-bag">
                 <div class="images"><a href="./tote-bag.html"><img src="./resources/index images/grad studies-index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./tote-bag.html"><span class="project-title">RISD Graduate Studies</span></a><span class="year">2025</span><br><br>
                 I designed custom type utilizing forms gathered from RISD graduate studio and common spaces, like Fleet Library. 
                 </div>
             </div>
-            <div class="project-mobile filterDiv self">
+            <div class="project-mobile filterDiv self" id="end-of-history">
                 <div class="images"><a href="./end-of-history-history-of-the-end.html"><img src="./resources/portfolio page images/end of history 2.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./end-of-history-history-of-the-end.html"><span class="project-title">The End of History–History of the End</span></a><span class="year">2025</span><br><br>
                     A book of two timelines. Section 1 (white pages), <em>The End of History</em>, documents key events contributing to the global dominance of neoliberalism and Fukuyama's declaration of the end of history. Section 2 (black pages), <em>History of the End</em>, documents global acts of resistance to it—demonstrating that future alternatives have never been foreclosed.
                 </div>
             </div>
-            <div class="project-mobile filterDiv self">
+            <div class="project-mobile filterDiv self" id="houses-air-street">
                 <div class="images"><a href="./houses-air-street.html"><img src="./resources/index images/houses-air-streets-index.png"><div class="overlay"></div><div class="overlay"></div></a></div>
                 <div class="text"><a href="./houses-air-street.html"><span class="project-title">The houses, the air, the streets</span></a><span class="year">2025</span><br><br>
                 Silk organza fabric prints with text from Karen Brodine's poem, <em>June 78</em>.
                 </div>
             </div>
-            <!-- <div class="project-mobile filterDiv teaching">
-                <div class="images"><img src="./resources/portfolio page images/Avrie Allen WS course.png"></div>
-                <div class="text"><a><span class="project-title">Activating Networks, Gathering Knowledge <em>(Adding Soon)</em></span></a><span class="year">2026</span><br><br>
-                    This course investigates how web-based archives can be used to gather inspiration and conduct research for creative practices. Taught wintersession 2026 in RISD Graphic Design department.
-                </div>
-            </div> -->
-            <div class="project-mobile filterDiv client">
+            <div class="project-mobile filterDiv client" id="kinsey">
                 <div class="images"><a href="./kinsey-institute.html"><img src="./resources/index images/kinsey day IG-index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./kinsey-institute.html"><span class="project-title">Kinsey Institute</span></a><span class="year">2022–24</span><br><br>
                 Miscellaneous works from my time as graphic designer at the Kinsey Institute.
                 </div>
             </div>
-            <div class="project-mobile filterDiv self">
+            <div class="project-mobile filterDiv self" id="fragments-of-a-future">
                 <div class="images"><a href="./fragments-of-a-future.html"><img src="./resources/index images/fragments of the future index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./fragments-of-a-future.html"><span class="project-title">fragments of a future</span></a><span class="year">2025</span><br><br>
                 A poster arranged by hand using <em>June, 78</em> by Karen Brodine as source material. 
                 </div>
             </div>
-            <!-- <div class="project-mobile filterDiv teaching">
-                <div class="images"><img src="./resources/index images/girlhood-workshopindex.png"></div>
-                <div class="text"><a><span class="project-title">Girlhood Zine Workshop <em>(Adding Soon)</em></span></a><span class="year">2025</span><br><br>
-                Dr. Kennedi Johnson and I conducted a zine workshop with formerly incarcerated narrators (including women and one trans masculine person) from the Visiting Room Project, a community archive in New Orleans, to reflect on girlhood as a tool for identity-construction outside of their experience with incarceration.
-                </div>
-            </div> -->
-            <div class="project-mobile filterDiv client">
-                <div class="images"><a href="./risd-campus-exhibitions.html"><img src="./resources/index images/risd-gallery-brochure-indx.png"></div>
+            <div class="project-mobile filterDiv client" id="risd-campus-exhibitions">
+                <div class="images"><a href="./risd-campus-exhibitions.html"><img src="./resources/index images/risd-gallery-brochure-indx.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./risd-campus-exhibitions.html"><span class="project-title">RISD Campus Exhibitions</span></a><span class="year">2025–26</span><br><br>
                 Brochure design for all of RISD's on-campus gallery exhibitions.
                 </div>
@@ -301,7 +266,7 @@
                 <br><br><span class="note">Collaboration with Jacob Marcus</span>
                 </div>
             </div> -->
-            <div class="project-mobile filterDiv self">
+            <div class="project-mobile filterDiv self" id="empty-pedestal">
                 <div class="images"><a href="./empty-pedestal.html"><img src="./resources/index images/emptypedestal-index.png"><div class="overlay"></div></a></div>
                 <div class="text"><a href="./empty-pedestal.html"><span class="project-title">An Empty Pedestal is an Invitation</span></a><span class="year">2025</span><br><br>
                 Following protests and repeated vandalism of a Christopher Columbus statue in 2020, the city of Providence removed the statue from its pedestal in the Elmwood neighborhood and later gifted it to the city of Johnston, RI where it took on a reactionary cultural significance. Zines and small graphics were distributed around Elmwood, providing this history and inviting residents to submit to a digital archive, an anti-monument, imagining what histories to honor in its place.
@@ -314,19 +279,18 @@
                 <br><br><span class="note">Installed in Grunwald Gallery at Indiana University</span>
             </div>
             </div>
-            <!-- <div class="project-mobile filterDiv self">
-                <div class="images"><a href="./luddite.html"><img src="./resources/index images/luddite-index.png"><div class="overlay"></div></a></div>
-                <div class="text"><a href="./luddite.html"><span class="project-title">luddite.com/munity</span></a><span class="year">2025</span><br><br>
-                <em>luddite.com/munity</em>, a typography-driven installation, speculates on the effects artificial intelligence will have on our lived experience: our interpersonal relationships, language, labor, cognition, and culture. Set in a fictional post-Providence in 2073, it imagines the struggle of a society facing the effects of climate change but stunted by their over-reliance on artificial intelligence.
-                <br><br><span class="note">Collaboration with Jacob Marcus</span>
+
+                        <div class="project-mobile filterDiv teaching" id="girlhood-zine-workshop">
+                <div class="images"><img src="./resources/index images/girlhood-workshopindex.png"></div>
+                <div class="text"><span class="project-title">Girlhood Zine Workshop</span><span class="year">2025</span><br><br>
+                Dr. Kennedi Johnson and I conducted a zine workshop with formerly incarcerated narrators (including women and one trans masculine person) from the Visiting Room Project, a community archive in New Orleans, to reflect on girlhood as a tool for identity-construction outside of their experience with incarceration.
                 </div>
-                </div> -->
-            <div class="project-mobile filterDiv self">
-                <div class="images"><img src="./resources/index images/girlhood_redefined-index.png"></div>
-                <div class="text"><a><span class="project-title">girlhood redefined <em>(Adding Soon)</em></span></a><span class="year">2024</span><br><br>
-                <em>girlhood redefined</em> not only seeks to showcase the multiplicity of girlhood, but practices creating knowledge and collective subjectivity from a feminist perspective. The project exemplifies the role that artists and designers, as creators and curators of knowledge, can have in this endeavor, and provides an example of how feminist epistemology relates to design practices.           
-                <br><br><span class="note">In partnership with the Kinsey Institute</span>
             </div>
+            <div class="project-mobile filterDiv teaching" id="activating-networks">
+                <div class="images"><img src="./resources/portfolio page images/Avrie Allen WS course.png"></div>
+                <div class="text"><span class="project-title">Activating Networks, Gathering Knowledge</span><span class="year">2026</span><br><br>
+                    This course investigates how web-based archives can be used to gather inspiration and conduct research for creative practices. Taught wintersession 2026 in RISD Graphic Design department.
+                </div>
             </div>
         </section>
 
@@ -334,6 +298,11 @@
 
 
 <script>
+
+
+var currentView = 'designer';
+var currentFilter = 'all';
+
 function toggleCategory(el) {
     var entries = el.nextElementSibling;
     var icon = el.querySelector(".toggle-icon");
@@ -343,52 +312,63 @@ function toggleCategory(el) {
     icon.textContent = isOpen ? "" : "+";
 }
 
-    filterSelection("all")
+function setView(view) {
+    currentView = view;
+    document.body.setAttribute('data-view', view);
+
+    var toggles = document.getElementsByClassName('view-toggle');
+    for (var i = 0; i < toggles.length; i++) {
+        toggles[i].classList.toggle('active', toggles[i].dataset.view === view);
+    }
+
+
+    currentFilter = 'all';
+    var containers = document.querySelectorAll('#filter, #filter-mobile2');
+    for (var j = 0; j < containers.length; j++) {
+        var btns = containers[j].getElementsByClassName('btn');
+        for (var k = 0; k < btns.length; k++) {
+            btns[k].classList.toggle('active', k === 0);
+        }
+    }
+
+    render();
+}
+
 function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
+    currentFilter = c || 'all';
+    render();
 }
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
+function render() {
+    var items = document.getElementsByClassName('filterDiv');
+
+    for (var i = 0; i < items.length; i++) {
+        var el = items[i];
+        var isTeaching = el.classList.contains('teaching');
+        var inView = currentView === 'educator' ? isTeaching : !isTeaching;
+        var matchesFilter = currentView === 'educator' ||
+            currentFilter === 'all' ||
+            el.classList.contains(currentFilter);
+
+        el.classList.toggle('show', inView && matchesFilter);
     }
-  }
-  element.className = arr1.join(" ");
 }
 
 var filterContainers = document.querySelectorAll("#filter, #filter-mobile, #filter-mobile2");
-filterContainers.forEach(function(container) {
-  var btns = container.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-      var current = this.closest("#filter, #filter-mobile, #filter-mobile2").getElementsByClassName("active")[0];
-      if (current) current.className = current.className.replace(" active", "");
-      this.className += " active";
-    });
-  }
+filterContainers.forEach(function (container) {
+    var btns = container.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = this.closest("#filter, #filter-mobile, #filter-mobile2")
+                .getElementsByClassName("active")[0];
+            if (current) current.classList.remove("active");
+            this.classList.add("active");
+        });
+    }
 });
 
+setView('designer');
 </script>
 </body>
 </html>
