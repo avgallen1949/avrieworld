@@ -23,13 +23,14 @@ html, body {
 a {
     color: olive;
     text-decoration: none;
+    transition: text-decoration .2s ease-in-out;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-img {
+img, video {
     object-fit: cover;
     width: 100%;
     height: auto;
@@ -114,17 +115,64 @@ img {
         display: flex;
         flex-direction: column;
         gap: 0;
-        background-color: white;
         background-clip: content-box; 
     }
 
-    #index-images img {
-        transition: opacity 0.11s ease-in-out;
+    .container {
+        position: relative;
     }
 
-    #index-images img:hover {
+    .container:hover {
         cursor: pointer;
-        opacity: 0.0;
+    }
+
+    .overlay {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.12s ease;
+    pointer-events: none;
+    }
+
+   .container:hover .overlay {
+    opacity: 1;
+    }
+
+    #gh-overlay {
+    background-color: #423abc;
+    }
+    #cs-overlay {
+    background-color: #f1c812;
+    }
+    #eu-overlay {
+        background-color: #438cc9;
+    }
+    #om-overlay {
+        background-color: #b9060f;
+    }
+    #eh-overlay {
+        background-color: rgb(217, 217, 217);
+    }
+    #tw-overlay {
+        background-color: #e67d0d;
+    }
+    #gs-overlay {
+        background-color: #004abb;
+    }
+    #ki-overlay{
+    background-color: #3d3d3e;
+    }
+    #ri-overlay{
+        background-color: #d03471;
+    }
+    #kb-overlay {
+        background-color: #a3ddff;
+    }
+    #ff-overlay {
+        background-color: #f04d24;
+    }
+    #ep-overlay {
+        background-color: #958780;
     }
 
     #index-projects {
