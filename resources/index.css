@@ -15,6 +15,9 @@ html, body {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+    scrollbar-color: yellow yellow;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 
 a {
