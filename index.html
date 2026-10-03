@@ -9,6 +9,7 @@
   <meta property="og:image" content="https://www.countersense.world/resources/preview.png" />
   <meta property="og:title" content="Avrie Allen" />
   <meta property="og:description" content="Avrie Allen is an interdisciplinary designer + educator" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
@@ -23,8 +24,6 @@
         <a href="https://www.instagram.com/avrie.world/">Instagram</a>
         <div class="space"></div>
         <a href="https://www.are.na/avrie-allen/">Are.na</a>
-        <br><br>
-        <img src="./resources/Unconfirmed 213465.crdownload">
         
         <br><br>
         <div class="alt">About</div>
@@ -71,19 +70,19 @@ Typography Summer School
 <div class="space"></div>
 <!-- Instructor, Color + Surface
 <div class="cv-info">Rhode Island School of Design, Spring 2027</div> -->
-Instructor, <em>Graphic Design I</em>
+Instructor, Graphic Design I
 <div class="cv-info">Community College of Rhode Island, Fall 2026</div>
 <div class="space"></div>
-Instructor, <em>Activating Networks, Gathering Knowledge</em>
+Instructor, Activating Networks, Gathering Knowledge
 <div class="cv-info">Rhode Island School of Design, Wintersession 2026</div>
 <div class="space"></div>
-Graduate Teaching Assistant, Misc.
+Graduate Teaching Assistant, RISD Graphic Design Department
 <div class="cv-info">Rhode Island School of Design, 2025–26</div>
 <div class="space"></div>
 Peer Tutor, Center for Arts & Language
 <div class="cv-info">Rhode Island School of Design, 2024–26</div>
 <div class="space"></div>
-Facilitator, <em>Girlhood Zine Workshop</em>
+Facilitator, Girlhood Zine Workshop
 <div class="cv-info">The Visiting Room Project, 2025</div>
 
 <div class="space"></div>
@@ -93,16 +92,13 @@ Graduate Commons Grant
 <div class="cv-info">RISD, 2026</div>
 <div class="space"></div>
 <a href="https://www.risd.edu/news/stories/2025-risd-maharam-fellows-work-for-justice-and-sustainability" target="_blank">Maharam Fellowship</a>
-<div class="cv-info">RISD, 2026</div>
-<div class="space"></div>
-Gonda Fund
-<div class="cv-info">RISD, 2025, 2026</div>
+<div class="cv-info">RISD, 2025</div>
 <div class="space"></div>
 Graduate Fellowship
-<div class="cv-info">RISD, 2024–2026</div>
+<div class="cv-info">RISD Graphic Design, 2024–2026</div>
 <div class="space"></div>
 Cox Scholar
-<div class="cv-info">Indiana University—full tuition + professional development</div>
+<div class="cv-info">Indiana University</div>
 <div class="space"></div>
 Graphic Design Area Award
 <div class="cv-info">Indiana University</div>
@@ -116,8 +112,8 @@ Grafton D. Trout Essay Award
 MFA Thesis Writing Workshop
 <div class="cv-info">RISD Graphic Design, Guest Panelist, Fall 2026</div> 
 <div class="space"></div>
-<em>Body of Knowledge</em>, Graduate Artist Talk
-<div class="cv-info">Rhode Island School of Design, Winter 2027</div>
+"Body of Knowledge," Graduate Artist Talk
+<div class="cv-info">Rhode Island School of Design, Winter 2026</div>
 <div class="space"></div>
 <div class="alt2">Solo Exhibition</div>
 <div class="space"></div>
@@ -142,51 +138,21 @@ MFA Thesis Writing Workshop
     <div id="index-grid">
 
             <div id="index-images">
-
-            <div class="index-image">
-                    <img src="./resources/index images/girlhoodarrested-index.png">
+                    <img src="./resources/index images/girlhoodarrested-index.png" data-project="girlhood">
+                    <img src="./resources/index images/countersense-book-index.png" data-project="countersense">
+                    <img src="./resources/index images/closeup-index.png" data-project="utopia">
+                    <img src="./resources/index images/measure-index.png" data-project="measure">
+                    <img src="./resources/index images/grad studies-index.png" data-project="tote">
+                    <img src="./resources/index images/risd-gallery-brochure-indx.png" data-project="gallery">
+                    <img src="./resources/index images/fragments of the future index.png" data-project="future">
+                    <img src="./resources/index images/kinsey day IG-index.png" data-project="kinsey">
+                    <img src="./resources/index images/houses-air-streets-index.png" data-project="air">
+                    <img src="./resources/index images/emptypedestal-index.png" data-project="pedestal">
             </div>
 
-            <div class="index-image">
-                    <img src="./resources/index images/countersense-book-index.png">
-            </div>
-
-            <div class="index-image">
-                    <img src="./resources/index images/closeup-index.png">
-            </div>
-
-            <div class="index-image">
-                    <img src="./resources/index images/measure-index.png">
-            </div>
-
-            <div class="index-image">
-                    <img src="./resources/index images/grad studies-index.png">
-            </div>
-
-            <div class="index-image">
-                    <img src="./resources/index images/risd-gallery-brochure-indx.png">
-            </div>
-
-            <div class="index-image">
-                    <img src="./resources/index images/fragments of the future index.png">
-            </div>
-
-            <div class="index-image">
-                    <img src="./resources/index images/kinsey day IG-index.png">
-            </div>
-
-            <div class="index-image">
-                    <img src="./resources/index images/houses-air-streets-index.png">
-            </div>
-
-            <div class="index-image">
-                    <img src="./resources/index images/emptypedestal-index.png">
-            </div>
-
-        </div>
 
         <div id="index-projects">
-            <div class="index-project">
+            <div class="project" id="girlhood">
                 <div class="alt"><em>Girlhood Arrested: How Girlhood is Shaped by the Carceral Landscape in Louisiana</em></div>
                 <div class="space"></div>
                 <div class="alt2">
@@ -197,7 +163,7 @@ MFA Thesis Writing Workshop
                 <a href="https://www.visitingroomproject.org/" target="_blank">with The Visiting Room Project</a> and Dr. Kennedi Johnson
                 </div>
                 <br>
-                What began as a zine and self-publishing workshop with The Visiting Room Project (TVRP) developed into a 230-page book initiated by my collaborator Kennedi Johnson and me. Girlhood Arrested: How Girlhood is Shaped by the Carceral Landscape in Louisiana is a reflection on the Girlhood Zine Workshop we held, the possibilities of girlhood as an organizing construct of self outside of incarceration, and is a transhistorical engagement with the archival gaps of women’s lives and stories. It contains zine facsimiles and t-shirts by participants, essays, interviews, and archival material from the Louisiana state archives.
+                What began as a zine and self-publishing workshop with The Visiting Room Project (TVRP) developed into a 230-page book initiated by my collaborator Kennedi Johnson and me. <em>Girlhood Arrested: How Girlhood is Shaped by the Carceral Landscape in Louisiana</em> is a reflection on the Girlhood Zine Workshop we held, the possibilities of girlhood as an organizing construct of self outside of incarceration, and is a transhistorical engagement with the archival gaps of women’s lives and stories. It contains zine facsimiles and t-shirts by participants, essays, interviews, and archival material from the Louisiana state archives.
                 <div class="space"></div>
                 The design takes inspiration from disciplinary forms in prison. Throughout the book, text and images run over and outside of the gridded lines with no regard for attempts to fix or constrain—a conceptual move reflecting the formation of identity outside of the context of incarceration
                 <br><br>
@@ -208,11 +174,116 @@ MFA Thesis Writing Workshop
                 <img src="./resources/Images/girlhood-workshop3.png">
                 <img src="./resources/Images/girlhood-workshop4.png">
             </div>
+
+        <div class="project" id="countersense">
+                <div class="alt"><em>countersense</em></div>
+                <div class="space"></div>
+                <div class="alt2">
+                2025
+                <div class="space"></div>
+                Designer and Author
+                </div>
+                <br>
+                <em>countersense </em>my MFA thesis, is a culmination of my 2 years at RISD. It embodies a counterhegemonic practice of sense-making; it is a practice of opening up our present conditions for critical reflection and remaking. Viewing graphic design as an interdisciplinary and expansive field of meaning-making, <em>countersense</em> is the framework I perform between experience and ideology, self and material conditions—always foregrounding what politics are chosen as a result of the personal.                
+                <br><br>
+                <img src="./resources/Images/Photo Jun 15 2026, 1 49 31 PM.jpg">
+                <img src="./resources/Images/closeup cover.jpg">
+                <img src="./resources/Images/binding.jpg">
+                <img src="./resources/Images/countersense-presentation2 .png">
+                <img src="./resources/Images/countersense presentation.png">
+            </div>
+
+                <div class="project" id="utopia">
+                <div class="alt"><em>everyday utopia</em></div>
+                <br>
+                        <img id="construction" src="./resources/Unconfirmed 213465.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 30755.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 401158.crdownload">
+                </div>
+
+                <div class="project" id="measure">
+                <div class="alt"><em>On Measurement</em></div>
+                <br>
+                        <img id="construction" src="./resources/Unconfirmed 213465.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 30755.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 401158.crdownload">                
+                </div>
+
+                <div class="project" id="tote">
+                <div class="alt">RISD Graduate Studies Tote</div>
+                <br>
+                        <img id="construction" src="./resources/Unconfirmed 213465.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 30755.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 401158.crdownload">                   
+                </div>
+
+                <div class="project" id="gallery">
+                <div class="alt">RISD Campus Exhibitions Brochure</div>
+                <br>
+                        <img id="construction" src="./resources/Unconfirmed 213465.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 30755.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 401158.crdownload"> 
+                </div>
+
+                <div class="project" id="future">
+                <div class="alt"><em>fragments of a future</em></div>
+                <br>
+                        <img id="construction" src="./resources/Unconfirmed 213465.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 30755.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 401158.crdownload"> 
+                </div>
+
+                <div class="project" id="kinsey">
+                <div class="alt">Kinsey Institute</div>
+                <br>
+                        <img id="construction" src="./resources/Unconfirmed 213465.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 30755.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 401158.crdownload"> 
+                </div>
+
+                <div class="project" id="air">
+                <div class="alt"><em>everyday utopia</em></div>
+                <br>
+                        <img id="construction" src="./resources/Unconfirmed 213465.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 30755.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 401158.crdownload"> 
+                </div>
+
+                <div class="project" id="pedestal">
+                <div class="alt"><em>An Empty Pedestal is an Invitation</em></div>
+                <br>
+                        <img id="construction" src="./resources/Unconfirmed 213465.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 30755.crdownload">
+                        <img id="construction" src="./resources/Unconfirmed 401158.crdownload"> 
+                </div>
+
             </div>
             </section>
 
 
 
 </div>
+
+<script>
+        $(document).ready(function () {
+
+    // start with only the intro visible
+    $(".project").hide();
+    $("#girlhood").show();
+
+    $("#index-images img").click(function () {
+        var id = $(this).data("project");
+
+        $(".project").hide();          // hide every project
+        $("#" + id).show();            // show the matching one
+
+        $("#index-images img").removeClass("active");
+        $(this).addClass("active");    // mark the clicked image
+
+        $("#index-projects").scrollTop(0);   // start the new project at the top
+    });
+
+});
+</script>
 
 </body>

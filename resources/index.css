@@ -15,7 +15,7 @@ html, body {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    scrollbar-color: yellow yellow;
+    scrollbar-color: #e1ad01 #e1ad01;
     scrollbar-width: thin;
     scroll-behavior: smooth;
 }
@@ -35,6 +35,11 @@ img {
     height: auto;
     object-fit: cover;
     display: block;
+}
+
+#construction {
+    width: 60%;
+    margin: auto;
 }
 
 .space {
@@ -75,6 +80,7 @@ img {
     margin: 0;
 }
 
+
 #index {
     grid-column: 5 / 15;
     min-height: 0;             
@@ -100,12 +106,24 @@ img {
         display: flex;
         flex-direction: column;
         gap: 0;
+        background-color: white;
+        background-clip: content-box; 
+    }
+
+    #index-images img {
+        transition: opacity 0.11s ease-in-out;
+    }
+
+    #index-images img:hover {
+        cursor: pointer;
+        opacity: 0.0;
     }
 
     #index-projects {
         padding-top: 10px;
         border-left: var(--line); 
     }
+
 
 #cv {
     grid-column: 1 / 5;
@@ -115,6 +133,7 @@ img {
     padding-right: 30px;
     box-sizing: border-box;  
 }
+
 
 @media (max-width: 900px) {
     html, body {
