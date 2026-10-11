@@ -410,13 +410,13 @@ RISD 150th Anniversary
     $("#index-images img").click(function () {
         var id = $(this).data("project");
 
-        $(".project").hide();          // hide every project
-        $("#" + id).show();            // show the matching one
+        $(".project").hide();        
+        $("#" + id).show();   
 
         $("#index-images img").removeClass("active");
-        $(this).addClass("active");    // mark the clicked image
+        $(this).addClass("active");
 
-        $("#index-projects").scrollTop(0);   // start the new project at the top
+        $("#index-projects").scrollTop(0);
     });
 
 });
