@@ -231,13 +231,14 @@ img, video {
 
     #index-images {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 133px); 
+        grid-template-columns: repeat(auto-fill, 120px); 
         gap: 8px;
         height: auto;
         min-height: auto;
         overflow: visible;
         padding-block: var(--gutter);
         border-bottom: var(--line);
+        justify-content: center;
     }
 
     #index-images .container {
