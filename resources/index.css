@@ -235,7 +235,7 @@ img, video {
 
     #index-images {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 120px); 
+        grid-template-columns: repeat(auto-fill, 110px); 
         gap: 8px;
         height: auto;
         min-height: auto;
