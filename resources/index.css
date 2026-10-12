@@ -185,6 +185,10 @@ img, video {
         background-color: #958780;
     }
 
+    #rd-overlay {
+        background-color: #e25cf9;
+    }
+
     #index-projects {
         padding-top: 10px;
         border-left: var(--line); 
