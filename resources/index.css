@@ -252,8 +252,8 @@ img, video {
 
     #index-images {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 110px); 
-        gap: 8px;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 5px;
         height: auto;
         min-height: auto;
         overflow: visible;
