@@ -225,8 +225,23 @@ img, video {
     display: none;
 }
 
-
 @media (max-width: 1100px) {
+#cv {
+    grid-column: 1 / 6;
+}
+
+#index {
+    grid-column: 6 / 15;
+    font-size: 15px;
+}
+
+#index-grid {
+    grid-template-columns: 1fr 2fr;
+}
+}
+
+
+@media (max-width: 750px) {
     html, body {
         height: auto;
         width: auto;
@@ -243,6 +258,7 @@ img, video {
         border-left: none;
         border-top: var(--line);
         padding-top: 10px;
+        font-size: 20px;
     }
 
     #index-grid {
