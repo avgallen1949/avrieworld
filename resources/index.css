@@ -82,11 +82,12 @@ img, video {
 }
 
 .details {
-    display: flex;
-    flex-direction: row;
-    column-gap: 15px;
-    row-gap: 2px;
-    flex-wrap: wrap;
+    display: block;
+}
+
+.details > div {
+    display: inline;
+    margin-right: 15px; 
 }
 
 
@@ -126,6 +127,18 @@ img, video {
         flex-direction: column;
         gap: 0;
         background-clip: content-box; 
+    }
+
+    #grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
     }
 
     .container {
@@ -187,6 +200,10 @@ img, video {
 
     #rd-overlay {
         background-color: #e25cf9;
+    }
+
+    #ex-overlay {
+        background-color: #c9ffae;
     }
 
     #index-projects {
