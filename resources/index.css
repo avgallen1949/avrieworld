@@ -141,8 +141,7 @@ img, video {
         display: flex;
         flex-direction: column;
         gap: 0;
-        background-clip: content-box; 
-    }
+        background-clip: content-box;     }
 
     #grid2 {
         display: grid;
@@ -189,8 +188,13 @@ img, video {
         background-color: #b9060f;
     }
     #eh-overlay {
-        background-color: rgb(217, 217, 217);
+        background-color: rgb(0, 0, 0);
     }
+
+    #wt-overlay {
+        background-color: #61ef24;
+    }
+
     #tw-overlay {
         background-color: #e67d0d;
     }
@@ -218,11 +222,11 @@ img, video {
     }
 
     #ex-overlay {
-        background-color: #c9ffae;
+        background-color: #ccff00;
     }
 
     #tch-overlay {
-        background-color: #c9ffae;
+        background-color: #aeceff;
     }
 
     #index-projects {
