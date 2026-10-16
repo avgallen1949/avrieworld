@@ -66,6 +66,10 @@ img, video {
     background-color: rgb(227, 227, 227);
 }
 
+.smaller {
+    font-size: 15px;
+}
+
 .cv-info {
     color: gray;
 }
@@ -93,7 +97,8 @@ img, video {
 }
 
 .description, .details, .title {
-    padding-right: 20%;
+    /* padding-right: 0%; */
+    line-height: 1.35;
 }
 
 
