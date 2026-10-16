@@ -18,6 +18,7 @@ html, body {
     scrollbar-color: #e1ad01 white;
     scrollbar-width: thin;
     scroll-behavior: smooth;
+    text-wrap: pretty;
 }
 
 a {
@@ -62,6 +63,7 @@ img, video {
 
 #cv {
     font-size: 15px;
+    background-color: rgb(227, 227, 227);
 }
 
 .cv-info {
@@ -88,6 +90,10 @@ img, video {
 .details > div {
     display: inline;
     margin-right: 15px; 
+}
+
+.description, .details, .title {
+    padding-right: 20%;
 }
 
 
@@ -238,6 +244,10 @@ img, video {
 #index-grid {
     grid-template-columns: 1fr 2fr;
 }
+
+.description, .details, .title {
+    padding-right: 0;
+}
 }
 
 
@@ -251,6 +261,10 @@ img, video {
     #grid {
         display: block; 
         height: auto;
+    }
+
+    .description, .details, .title {
+    padding-right: 0;
     }
 
     #index {
