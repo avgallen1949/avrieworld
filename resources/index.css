@@ -48,6 +48,10 @@ img, video {
     height: 7px;
 }
 
+#indent {
+    padding-left: 20px;
+}
+
 .alt {
     color: #0040e4;
 }
@@ -214,6 +218,10 @@ img, video {
     }
 
     #ex-overlay {
+        background-color: #c9ffae;
+    }
+
+    #tch-overlay {
         background-color: #c9ffae;
     }
 
