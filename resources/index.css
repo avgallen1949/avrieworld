@@ -7,7 +7,7 @@
 html, body {
     font-family: "Diatype", Times;
     font-style: normal;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.25;
     color: #383838;
     height: 100dvh;
@@ -66,7 +66,7 @@ img, video {
 }
 
 #cv {
-    font-size: 15px;
+    font-size: 17px;
     background-color: rgb(227, 227, 227);
 }
 
@@ -79,7 +79,7 @@ img, video {
 }
 
 #about {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 #cv,
@@ -255,7 +255,7 @@ img, video {
 
 #index {
     grid-column: 6 / 15;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 #index-grid {
@@ -289,7 +289,6 @@ img, video {
         border-left: none;
         border-top: var(--line);
         padding-top: 10px;
-        font-size: 20px;
     }
 
     #index-grid {
