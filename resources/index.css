@@ -70,6 +70,10 @@ img, video {
     background-color: rgb(227, 227, 227);
 }
 
+#cv-full {
+    width: 500px;
+}
+
 .smaller {
     font-size: 15px;
 }
@@ -229,6 +233,10 @@ img, video {
         background-color: #aeceff;
     }
 
+    #nb-overlay {
+        background-color: #c80828;
+    }
+
     #index-projects {
         padding-top: 10px;
         border-left: var(--line); 
@@ -251,6 +259,10 @@ img, video {
 @media (max-width: 1100px) {
 #cv {
     grid-column: 1 / 6;
+}
+
+#cv-full {
+    width: 100%;
 }
 
 #index {
